@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,100;1,400&display=swap');
+
+html{
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../assets/img/bg.jpg);
+    font-family: 'Montserrat', sans-serif;
+}
+header img{
+    width: 150px;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+#body{
+    text-align: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+#body .results h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+#body .results h2{
+    font-size: 20px;
+    font-weight: lighter;
+}
+.results{
+    margin-bottom: 30px;
+}
+#left{
+    display: inline-block;
+    font-size: 40px;
+    margin-right: 40px;
+    text-align: left;
+}
+#left h4{
+    font-weight: bold;
+    font-size: smaller;
+}
+#left h3{
+    font-weight: lighter;
+}
+.correct-wrong-question{
+    font-size: 15px;
+}
+#central-circle{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 40px solid black;
+    border-radius: 200px;
+}
+#text-inside-circle{
+    margin-top: 20px;
+    padding: 20px;
+}
+#text-inside-circle h5{
+    margin-bottom: 20px;
+}
+h5 span{
+    color: aqua;
+}
+#text-inside-circle p{
+    font-size: small;
+    font-weight: 100;
+
+}
+#right{
+    display: inline-block;
+    font-size: 40px;
+    margin-left: 40px;
+    text-align: right;
+}
+#right h3{
+    font-weight: lighter;
+}    
+#right h4{
+    font-weight: bold;
+    font-size: smaller;
+}    
+footer button{
+    margin-top: 40px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    box-shadow: 0px 0px 7px 0px white;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    padding-top: 5px;
+}

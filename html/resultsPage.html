@@ -6,21 +6,36 @@
     <title>results-Page</title>
   </head>
   <link rel="stylesheet" href="../assets/resultsStyle.css" />
+  <link rel="stylesheet" href="../assets/reset.css" />
   <body>
     <header>
       <img src="../assets/img/epicode_logo.png" />
     </header>
-    <div>
-      <header>
+    <div id="body">
+      <div class="results">
         <h1>Results</h1>
         <h2>The summary of your answers:</h2>
-      </header>
-      <aside>
+      </div>
+      <aside id="left">
         <h3>Correct</h3>
         <h4>66.7%</h4>
+        <p class="correct-wrong-question">4/6 questions</p>
       </aside>
-      <aside></aside>
-      <footer></footer>
+      <div id="central-circle">
+        <div id="text-inside-circle">
+        <h5>Congratulations!<span><br> You passed the exam. </br></span></h5>
+        <p>We'll send you the certificate in few minutes.<h6 style="font-size: small;">Check your email &#40;including promotions / spam folder&#41;</h6>
+        </p>
+        </div>
+      </div>
+      <aside id="right">
+        <h3>Wrong</h3>
+        <h4>33.3&#37;</h4>
+        <p class="correct-wrong-question">2/6 questions</p>
+      </aside>
+      <footer>
+        <button>Rate us</button>
+      </footer>
     </div>
   </body>
 </html>
