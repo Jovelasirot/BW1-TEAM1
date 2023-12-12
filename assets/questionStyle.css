@@ -4,7 +4,7 @@ body {
   background-size: cover;
   margin-left: 15%;
   margin-right: 15%;
-  height: 100vh;
+  /* height: 100vh; */
   font-family: 'Outfit', sans-serif;
 }
 
@@ -114,6 +114,7 @@ main {
   letter-spacing: 5px;
   font-weight: bold;
   cursor: default;
+  margin-bottom: 4em;
 }
 
 #counter > span {
@@ -127,4 +128,18 @@ main {
     rgba(144, 0, 128, 1) 0%,
     rgba(210, 0, 148, 1) 50%
   );
+}
+
+#bottoneNext {
+  background-color: transparent;
+  color: whitesmoke;
+  width: 20%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid whitesmoke;
+  font-size: 1.1em;
+  opacity: 0.8;
+  margin-top: 3em;
 }
