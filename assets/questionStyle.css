@@ -5,7 +5,7 @@ body {
   margin-left: 15%;
   margin-right: 15%;
   height: 100vh;
-  font-family: "Outfit", sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 
 /* header */
@@ -92,7 +92,7 @@ main {
   cursor: pointer;
 }
 .btn::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   border-radius: 50px;
