@@ -157,23 +157,40 @@ const questionCurrentValue = (n) => {
 };
 
 const checkUserAnswer = () => {
-  let correctOne = questions[n].correct_answer;
-  let userAnswer;
-  const radios = document.getElementsByTagName("input");
-  for (let i = 0; i < radios.length; i++) {
-    if (radios[i].checked === true) {
-      userAnswer = radios[i].id;
-      console.log(userAnswer);
+  if (n !== 9) {
+    let correctOne = questions[n].correct_answer;
+    let userAnswer;
+    const radios = document.getElementsByTagName("input");
+    for (let i = 0; i < radios.length; i++) {
+      if (radios[i].checked === true) {
+        userAnswer = radios[i].id;
+        console.log(userAnswer);
+      }
     }
+    if (userAnswer === correctOne) {
+      nCorrect += 1;
+    }
+    n += 1;
+    console.log(nCorrect);
+    appendQuestion(n);
+    appendAnswers(n);
+    questionCurrentValue(n);
+  } else {
+    let correctOne = questions[n].correct_answer;
+    let userAnswer;
+    const radios = document.getElementsByTagName("input");
+    for (let i = 0; i < radios.length; i++) {
+      if (radios[i].checked === true) {
+        userAnswer = radios[i].id;
+        console.log(userAnswer);
+      }
+    }
+    if (userAnswer === correctOne) {
+      nCorrect += 1;
+    }
+    n += 1;
+    window.location.assign("./resultsPage.html");
   }
-  if (userAnswer === correctOne) {
-    nCorrect += 1;
-  }
-  n += 1;
-  console.log(nCorrect);
-  appendQuestion(n);
-  appendAnswers(n);
-  questionCurrentValue(n);
 };
 
 let n = 0;
