@@ -132,41 +132,57 @@ const allTheAnswers = (n) => {
   return answersArray;
 };
 
+const piallaTutto = () => {
+  const piallato = document.getElementsByClassName("btn");
+  for (let i = 0; i < piallato.length; i++) {
+    piallato[i].classList.remove("btn-clicked");
+  }
+};
+
 const appendAnswers = (n) => {
   const answersArray = allTheAnswers(n);
   const answersContainer = document.getElementById("answers");
   answersContainer.innerHTML = ``;
   for (let i = 0; i < answersArray.length; i++) {
     const newDiv = document.createElement("div");
-    const newRadioButton = document.createElement("input");
-    const newLabel = document.createElement("label");
-    newRadioButton.setAttribute("type", "radio");
-    newRadioButton.setAttribute("id", answersArray[i]);
-    newRadioButton.setAttribute("name", "userAnswer");
-    newLabel.setAttribute("for", answersArray[i]);
-    newLabel.innerText = answersArray[i];
-    newDiv.appendChild(newRadioButton);
-    newDiv.appendChild(newLabel);
+    newDiv.innerText = answersArray[i];
+    newDiv.classList.add("btn");
+    newDiv.addEventListener("click", function (e) {
+      piallaTutto();
+      newDiv.classList.add("btn-clicked");
+      console.log(newDiv.innerText);
+    });
+    // const newRadioButton = document.createElement("input");
+    // const newLabel = document.createElement("label");
+    // newRadioButton.setAttribute("type", "radio");
+    // newRadioButton.setAttribute("id", answersArray[i]);
+    // newRadioButton.setAttribute("name", "userAnswer");
+    // newLabel.setAttribute("for", answersArray[i]);
+    // newLabel.innerText = answersArray[i];
+    // newDiv.appendChild(newRadioButton);
+    // newDiv.appendChild(newLabel);
     answersContainer.appendChild(newDiv);
   }
 };
 
 const questionCurrentValue = (n) => {
   const currentValue = document.getElementById("counter");
-  currentValue.innerText = "QUESTION " + (n + 1) + "/10";
+  currentValue.innerHTML = `QUESTION ${n + 1}<span>/10</span></h3>`;
 };
 
 const checkUserAnswer = () => {
   if (n !== 9) {
     let correctOne = questions[n].correct_answer;
     let userAnswer;
-    const radios = document.getElementsByTagName("input");
-    for (let i = 0; i < radios.length; i++) {
-      if (radios[i].checked === true) {
-        userAnswer = radios[i].id;
-        console.log(userAnswer);
-      }
-    }
+    // const radios = document.getElementsByTagName("input");
+    // for (let i = 0; i < radios.length; i++) {
+    //   if (radios[i].checked === true) {
+    //     userAnswer = radios[i].id;
+    //     console.log(userAnswer);
+    //   }
+    // }
+    userAnswer = document.getElementsByClassName("btn-clicked")[0].innerText;
+    console.log(userAnswer);
     if (userAnswer === correctOne) {
       nCorrect += 1;
     }
@@ -178,13 +194,16 @@ const checkUserAnswer = () => {
   } else {
     let correctOne = questions[n].correct_answer;
     let userAnswer;
-    const radios = document.getElementsByTagName("input");
-    for (let i = 0; i < radios.length; i++) {
-      if (radios[i].checked === true) {
-        userAnswer = radios[i].id;
-        console.log(userAnswer);
-      }
-    }
+    // const radios = document.getElementsByTagName("input");
+    // for (let i = 0; i < radios.length; i++) {
+    //   if (radios[i].checked === true) {
+    //     userAnswer = radios[i].id;
+    //     console.log(userAnswer);
+    //   }
+    // }
+    userAnswer = document.getElementsByClassName("btn-clicked")[0].innerText;
+    console.log(chosenOne);
+    // userAnswer = chosenOne;
     if (userAnswer === correctOne) {
       nCorrect += 1;
     }

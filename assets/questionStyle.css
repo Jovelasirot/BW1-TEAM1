@@ -119,3 +119,12 @@ main {
 #counter > span {
   color: #d20098;
 }
+
+.btn-clicked {
+  background: rgb(144, 0, 128);
+  background: linear-gradient(
+    0deg,
+    rgba(144, 0, 128, 1) 0%,
+    rgba(210, 0, 148, 1) 50%
+  );
+}
