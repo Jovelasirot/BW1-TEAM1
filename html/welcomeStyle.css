@@ -2,9 +2,8 @@ body{
     background-image: url(/assets/img/bg.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
-    margin-left: 15%;
+    margin-left: 10%;
     margin-right: 10%;
-
     font-family: 'Outfit', sans-serif;
 }
 
@@ -12,9 +11,10 @@ body{
     margin-top: 5%;
 }
 
-.first_title{
+.first_title h1{
     line-height: 5rem;
     margin-top: 6%;
+    font-weight: 400;
 }
 
 .second_title {
@@ -37,7 +37,6 @@ margin-top: 8%;
 #checkbox{
 width: 25px;
 height: 25px;
-/* outline: auto; */
 margin-top: 3%;
 appearance: none;
 border: 2px solid whitesmoke;
@@ -48,7 +47,6 @@ cursor: pointer;
 .label{
     margin-left: 20px;
     color: white;
-    /* content: '✔' */
 }
 
 
