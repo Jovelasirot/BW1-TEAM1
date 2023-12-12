@@ -120,7 +120,7 @@ main {
   color: #d20098;
 }
 
-.btn_clicked {
+.btn-clicked {
   background: rgb(144, 0, 128);
   background: linear-gradient(
     0deg,
