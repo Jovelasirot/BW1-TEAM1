@@ -5,22 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>question-Page</title>
     <link rel="stylesheet" href="../assets/reset.css" />
+    <link rel="stylesheet" href="../assets/questionStyle.css" />
   </head>
   <body>
     <header>
-      <img src="../assets/img/epicode_logo.png" alt="logo epicode" />
+      <img
+        src="../assets/img/epicode_logo.png"
+        alt="logo epicode"
+        id="logo"
+        ;
+      />
       <section id="timer">
-        <div id="seconds">SECONDS 1 REMAINING</div>
+        <div class="innerTimer">
+          <div id="countdown">SECONDS <br /><span>1</span> <br />REMAINING</div>
+        </div>
       </section>
     </header>
     <main>
-      <h2 id="question">How can I create a <span>checkbox in HTML</span></h2>
-      <ul id="answers">
-        <li>&ltinput type = "check"&gt</li>
-        <li>&ltinput type = "checkbox"&gt</li>
-        <li>&ltcheckbox&gt</li>
-        <li>&ltinput type = "button"&gt</li>
-      </ul>
+      <h2 id="question">
+        How can I create a <br /><span>checkbox in HTML</span>
+      </h2>
+      <div id="answers"></div>
     </main>
     <footer>
       <h3 id="counter">QUESTION 1<span>/10</span></h3>
