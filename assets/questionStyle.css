@@ -21,16 +21,20 @@ header {
   height: 100%;
 }
 
-/* timer */
+/* timer aling*/
 #timer {
-  height: 160px;
-  width: 160px;
-  border: 1px solid red;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
+}
+
+/* timer progress bar */
+#timer {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  border: 1px solid red;
 }
 
 /* timer text */
@@ -109,6 +113,7 @@ main {
   padding-top: 60px;
   letter-spacing: 5px;
   font-weight: bold;
+  cursor: default;
 }
 
 #counter > span {
