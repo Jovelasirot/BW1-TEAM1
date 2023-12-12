@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+body {
+    background-image: url(../assets/img/bg.jpg);
+    height: 100vh;
+    background: linear-gradient(45deg, #62008f, #9909db);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "Poppins", sans-serif;
+
+};
+.rating-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background: fixed;
+    padding: 25px 50px 35px;
+    border-radius: 25px;
+    box-shadow: 0 5px rgba(red, green, blue, alpha);
+};
+.rating-box-header {
+    font-size: 22px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+};
+.rating-box .stars{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+};
+.stars i{
+    padding-left: 20px;
+    font-size: 35px;
+    cursor: pointer;
+}
