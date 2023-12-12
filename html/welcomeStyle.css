@@ -1,62 +1,111 @@
-body{
-    background-image: url(/assets/img/bg.jpg); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-left: 10%;
-    margin-right: 10%;
-    font-family: 'Outfit', sans-serif;
+body {
+  background-image: url(/assets/img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: "Outfit", sans-serif;
+  height: 100vh;
 }
 
-.first_logo{
-    margin-top: 5%;
+.first_logo {
+  margin-top: 5%;
 }
 
-.first_title h1{
-    line-height: 5rem;
-    margin-top: 6%;
-    font-weight: 400;
+.first_title h1 {
+  line-height: 5rem;
+  margin-top: 6%;
+  font-weight: 400;
 }
 
 .second_title {
-line-height: 2.2rem;
-margin-top: 8%;
+  line-height: 2.2rem;
+  margin-top: 8%;
 }
 
-.first_Ul{
-    font-size: 25px;
-    line-height: 2.2rem;
-    margin-top: 4%;
+.first_Ul {
+  font-size: 25px;
+  line-height: 2.2rem;
+  margin-top: 4%;
 }
 
-.input{
-    font-size: 25px;
-    height: 20px;
+.input {
+  font-size: 25px;
+  height: 20px;
 }
 
-
-#checkbox{
-width: 25px;
-height: 25px;
-margin-top: 3%;
-appearance: none;
-border: 2px solid whitesmoke;
-cursor: pointer;
+#checkbox {
+  opacity: 0;
 }
 
-
-.label{
-    margin-left: 20px;
-    color: white;
+#checkbox + label {
+  position: relative;
+  padding-left: 45px;
+  cursor: pointer;
+  display: inline-block;
+  color: #ffff;
+  line-height: 25px;
 }
 
-
-button{
-    margin-left: 30%;
-    padding-top: 0.6%;
-    box-shadow: 3px 3px 3px 10px #00ffff;
-    text-align: center;
-    width: 18%;
-    border: none;
-    cursor: pointer;
+#checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  outline: 2px solid rgb(150, 150, 150);
+  background: none;
 }
 
+#checkbox:checked + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  outline: 2px solid white;
+  background: none;
+}
+
+#checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  background-image: url(../assets/img/checkFigma.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+#checkbox:not(:checked) + label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  background-image: url(../assets/img/checkFigma.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 0;
+}
+
+button {
+  margin-left: 30%;
+  padding-top: 0.6%;
+  background-color: #00ffff;
+  padding: 18px 36px;
+  box-shadow: 0 0 50px #00ffff;
+  text-align: center;
+  width: 18%;
+  border: none;
+  cursor: pointer;
+}

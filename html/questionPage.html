@@ -15,9 +15,17 @@
         id="logo"
         ;
       />
-      <section id="timer">
-        <div class="innerTimer">
-          <div id="countdown">SECONDS <br /><span>1</span> <br />REMAINING</div>
+      <section id="containerTimer">
+        <div class="mainContainer">
+          <div class="circleContainer">
+            <div class="semicircle"></div>
+            <div class="semicircle"></div>
+            <div class="semicircle"></div>
+            <div class="outercircle"></div>
+          </div>
+          <div class="timerContainer">
+            <div class="timer"></div>
+          </div>
         </div>
       </section>
     </header>
@@ -32,5 +40,6 @@
       <h3 id="counter">QUESTION 1<span>/10</span></h3>
     </footer>
     <script src="../questions.js"></script>
+    <script src="../js/questionsTimer.js"></script>
   </body>
 </html>
