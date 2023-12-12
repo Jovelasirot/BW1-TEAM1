@@ -153,7 +153,7 @@ const appendAnswers = (n) => {
 
 const questionCurrentValue = (n) => {
   const currentValue = document.getElementById("counter");
-  currentValue.innerText = "question " + (n + 1) + "/10";
+  currentValue.innerText = "QUESTION " + (n + 1) + "/10";
 };
 
 const checkUserAnswer = () => {
