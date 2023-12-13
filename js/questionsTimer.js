@@ -1,6 +1,6 @@
 const timer = document.querySelector(".timer");
 const semicircle = document.querySelectorAll(".semicircle");
-const sec = 25;
+const sec = 15;
 
 const seconds = sec * 1000;
 const setTime = seconds;
@@ -24,7 +24,10 @@ const countDownTimer = () => {
 
   const secs = Math.floor((remainingTime / 1000) % 60);
 
-  timer.innerHTML = `<div>${secs < 10 ? "0" + secs : secs}</div>`;
+  timer.innerHTML = `
+ <div class="timerText">SECONDS</div>
+  <div>${secs < 10 ? "0" + secs : secs}</div>
+ <div class="timerText">REMAINING</div>`;
 
   if (remainingTime < 10 * 1000) {
     timer.style.color = "red";
@@ -34,10 +37,13 @@ const countDownTimer = () => {
     semicircle[0].style.display = "none";
     semicircle[1].style.display = "none";
     semicircle[2].style.display = "none";
-    timer.innerHTML = `<div>00</div>`;
+    timer.innerHTML = `
+    <div class="timerText">SECONDS</div>
+     <div>00</div>
+    <div class="timerText">REMAINING</div>`;
   } else {
   }
 };
 
-countDownTimer();
+window.onload(countDownTimer());
 const timerLoop = setInterval(countDownTimer);

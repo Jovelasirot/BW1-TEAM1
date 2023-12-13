@@ -164,12 +164,18 @@ main {
   height: 120px;
   color: rgb(255, 255, 255);
   font-size: 50px;
-  font-weight: 100;
+  font-weight: 200;
   width: 80px;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
+  text-align: center;
   z-index: 6;
+}
+
+.timerText {
+  font-size: 9px;
+  font-weight: bold;
 }
