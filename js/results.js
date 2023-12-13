@@ -5,19 +5,21 @@ console.log(resultsFromOtherPage);
 const modifyCorrectPercentage = () => {
   const correctPercentage = document.getElementById("correct-percentage");
   let userCorrectPercentage = (resultsFromOtherPage / 10) * 100;
-  correctPercentage.innerHTML = `        Correct <br />
-  <b>${userCorrectPercentage}%</b> <br />
-  <span class="perc-results"> ${resultsFromOtherPage}/10 questions </span>`;
+  correctPercentage.innerHTML = `       
+  <span class="percentageFirst">Correct</span>
+  <span class="percentageSecond">${userCorrectPercentage}%</span>
+  <span class="percentageThird">${resultsFromOtherPage}/10 questions </span>`;
 };
 
 const modifyWrongPercentage = () => {
   const wrongPercentage = document.getElementById("wrong-percentage");
   let userWrongPercentage = ((10 - resultsFromOtherPage) / 10) * 100;
-  wrongPercentage.innerHTML = `        Wrong <br />
-  <b>${userWrongPercentage}%</b> <br />
-  <span class="perc-results"> ${
+  wrongPercentage.innerHTML = `       
+  <span class="percentageFirst">Wrong</span>
+  <span class="percentageSecond">${userWrongPercentage}%</span>
+  <span class="percentageThird">${
     10 - resultsFromOtherPage
-  }/10 questions </span>`;
+  }/10 questions</span>`;
 };
 
 const passedOrNot = () => {

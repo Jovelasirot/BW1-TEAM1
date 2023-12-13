@@ -4,7 +4,7 @@ body {
   background-repeat: no-repeat;
   margin-left: 10%;
   margin-right: 10%;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 img {
@@ -87,4 +87,37 @@ a {
   color: white;
   font-weight: bold;
   font-size: 25px;
+}
+
+#correct-percentage {
+  color: whitesmoke;
+  font-size: 45px;
+}
+
+#correct-percentage > span {
+  display: block;
+}
+
+#wrong-percentage {
+  color: whitesmoke;
+  font-size: 45px;
+  text-align: right;
+}
+
+#wrong-percentage > span {
+  display: block;
+}
+.percentageFirst {
+  font-size: 70px;
+}
+
+.percentageSecond {
+  font-weight: bold;
+  font-size: 70px;
+  margin-top: 5px;
+}
+
+.percentageThird {
+  font-size: 25px;
+  margin-top: -15px;
 }
