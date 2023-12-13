@@ -58,3 +58,76 @@ button {
   border: none;
   cursor: pointer;
 }
+
+/* timer css */
+
+.mainContainer,
+.circleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.mainContainer {
+  width: 100%;
+}
+
+.circleContainer {
+  width: 300px;
+  height: 300px;
+  background-color: #ddd;
+  border-radius: 50%;
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.semicircle {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: right;
+}
+
+.semicircle:nth-child(1) {
+  background-color: #088b8b;
+  z-index: 2;
+}
+
+.semicircle:nth-child(2) {
+  background-color: #088b8b;
+  z-index: 3;
+}
+
+.semicircle:nth-child(3) {
+  background-color: #ddd;
+  z-index: 4;
+}
+
+.outercircle {
+  width: 280px;
+  height: 280px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  z-index: 5;
+}
+
+.timerContainer {
+  width: 250px;
+  height: 120px;
+  font-size: 50px;
+  font-weight: 100;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  z-index: 6;
+}
+
+.timerText {
+  font-size: 9px;
+}

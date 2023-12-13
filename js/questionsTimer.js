@@ -24,10 +24,10 @@ const countDownTimer = () => {
 
   const secs = Math.floor((remainingTime / 1000) % 60);
 
-  timer.innerHTML = `
- <div class="timerText">SECONDS</div>
+  timer.innerHTML = ` 
+  <div class="timerText">SECONDS</div>
   <div>${secs < 10 ? "0" + secs : secs}</div>
- <div class="timerText">REMAINING</div>`;
+  <div class="timerText">REMAINING</div>`;
 
   if (remainingTime < 10 * 1000) {
     timer.style.color = "red";
@@ -37,13 +37,12 @@ const countDownTimer = () => {
     semicircle[0].style.display = "none";
     semicircle[1].style.display = "none";
     semicircle[2].style.display = "none";
-    timer.innerHTML = `
-    <div class="timerText">SECONDS</div>
-     <div>00</div>
-    <div class="timerText">REMAINING</div>`;
+    timer.innerHTML = `<div class="timerText">SECONDS</div>
+   <div>00</div>
+  <div class="timerText">REMAINING</div>`;
   } else {
   }
 };
 
-window.onload(countDownTimer());
+countDownTimer();
 const timerLoop = setInterval(countDownTimer);

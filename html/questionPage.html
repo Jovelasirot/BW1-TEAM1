@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>question-Page</title>
+    <link rel="stylesheet" href="../assets/reset.css" />
+    <link rel="stylesheet" href="../assets/questionStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <img
+        src="../assets/img/epicode_logo.png"
+        alt="logo epicode"
+        id="logo"
+        ;
+      />
+      <section id="containerTimer">
+        <div class="mainContainer">
+          <div class="circleContainer">
+            <div class="semicircle"></div>
+            <div class="semicircle"></div>
+            <div class="semicircle"></div>
+            <div class="outercircle"></div>
+          </div>
+          <div class="timerContainer">
+            <div class="timer"></div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <h2 id="question">
+        How can I create a <br /><span>checkbox in HTML</span>
+      </h2>
+      <div id="answers"></div>
+      <button id="bottoneNext" onclick="checkUserAnswer()">
+        PROSSIMA <i class="fas fa-arrow-right"></i>
+      </button>
+    </main>
+    <footer>
+      <h3 id="counter">QUESTION 1<span>/10</span></h3>
+    </footer>
+    <script src="../questions.js"></script>
+    <script src="/js/questionsTimer.js"></script>
+  </body>
+</html>
