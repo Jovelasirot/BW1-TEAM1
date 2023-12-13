@@ -4,41 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>results-Page</title>
-    <link rel="stylesheet" href="../assets/resultsStyle.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <img src="/assets/img/epicode_logo.png" alt="logo">
-    <div class="first_title"> 
-        <h1 style="color: whitesmoke; font-size: 80px;"> Results </h1>
-        <h2 style="color: whitesmoke; font-size: 40px;"> The summary of your answers: </h2>
+    <link rel="stylesheet" href="../assets/resultsStyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img src="/assets/img/epicode_logo.png" alt="logo" />
+    <div class="first_title">
+      <h1 style="color: whitesmoke; font-size: 80px">Results</h1>
+      <h2 style="color: whitesmoke; font-size: 40px">
+        The summary of your answers:
+      </h2>
     </div>
     <div class="twoParagraphs1">
-        <p style="color: whitesmoke; font-size: 60px;"> Correct <br> <b>66.7%</b>  <br> <span style="font-size: 25px;"> 4/6 questions </span> </p>
-        
+      <p id="correct-percentage" style="color: whitesmoke; font-size: 60px">
+        Correct <br />
+        <b>66.7%</b> <br />
+        <span style="font-size: 25px"> 4/6 questions </span>
+      </p>
     </div>
     <div class="twoParagraphs2">
-        <p style="color: whitesmoke; font-size: 60px;"> Wrong <br> <b>33.3%</b>  <br> <span style="font-size: 25px;"> 4/6 questions </span> </p>
-        
+      <p id="wrong-percentage" style="color: whitesmoke; font-size: 60px">
+        Wrong <br />
+        <b>33.3%</b> <br />
+        <span style="font-size: 25px"> 4/6 questions </span>
+      </p>
     </div>
 
     <div class="donut">
-        <div class="inTheDonut"> 
-            <p style="color: whitesmoke;"> Congratulations! <br> <span style="color: #00ffff;">You passed the exam.</span></p>
-            <p style="color: whitesmoke;"> We'll send you the certificate <br> in few minutes. <br> Check your email (incuding <br> promotions / spam folder)</p>
-        </div>
+      <div class="inTheDonut">
+        <p id="passed" style="color: whitesmoke">
+          Congratulations! <br />
+          <span style="color: #00ffff">You passed the exam.</span>
+        </p>
+        <p id="certificate" style="color: whitesmoke">
+          We'll send you the certificate <br />
+          in few minutes. <br />
+          Check your email (incuding <br />
+          promotions / spam folder)
+        </p>
+      </div>
     </div>
 
-    <form> 
-
-        <button type="submit" onclick="location.href = 'feedBack.html';">RATE US</button>
-   
+    <form>
+      <button type="submit" onclick="location.href = 'feedBack.html';">
+        RATE US
+      </button>
     </form>
-
-
-   
-</body>
+    <script src="../js/results.js"></script>
+  </body>
 </html>
