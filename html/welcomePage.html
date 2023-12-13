@@ -4,16 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>welcome-Page</title>
-    <link rel="stylesheet" href="welcomeStyle.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-                   <div class="first_logo">
-                       <img src="/assets/img/epicode_logo.png" alt="logo" width="20%">
-                   </div>
+    <link rel="stylesheet" href="welcomeStyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="first_logo">
+      <img src="/assets/img/epicode_logo.png" alt="logo" width="15%" />
+    </div>
 
     <div class="first_title">
       <h1 style="color: whitesmoke; font-size: 100px">
@@ -23,7 +26,7 @@
     </div>
 
     <div class="second_title">
-      <h2 style="color: #d20094; font-size: 60px">Instructions</h2>
+      <h2>Instructions</h2>
       <p style="color: whitesmoke; font-size: 25px">
         We don't expect most engineers to know the answers to all of these
         <br />
@@ -46,18 +49,24 @@
     </div>
 
     <div class="input">
-      <input id="checkbox" type="checkbox" name="checkbox" required />
-      <label
-        class="label"
-        for="checkbox"
-        style="color: whitesmoke"
-        onclick="location.href = 'questionPage.html';"
-      >
+      <input
+        id="checkbox"
+        type="checkbox"
+        name="checkbox"
+        value="Check"
+        required
+      />
+      <label class="label" for="checkbox" style="color: whitesmoke">
         I promise to answer myself without help from anyone
       </label>
-      <button type="submit" style="background-color: #00ffff; font-size: 30px">
+      <button
+        id="proceedButton"
+        type="submit"
+        style="background-color: #00ffff; font-size: 30px"
+      >
         <strong> PROCEED </strong>
       </button>
     </div>
+    <script src="/js/welcome.js"></script>
   </body>
 </html>
