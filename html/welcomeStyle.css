@@ -6,14 +6,6 @@ body {
   margin-right: 10%;
   font-family: "Outfit", sans-serif;
   height: 100vh;
-body {
-  background-image: url(/assets/img/bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-left: 10%;
-  margin-right: 10%;
-  font-family: 'Outfit', sans-serif;
-  padding-bottom: 5em;
 }
 
 .first_logo {
@@ -48,7 +40,7 @@ body {
 
 #checkbox + label {
   position: relative;
-  padding-left: 45px;
+  padding-left: 50px;
   cursor: pointer;
   display: inline-block;
   color: #ffff;
