@@ -1,83 +1,90 @@
-body{
-    background-image: url(/assets/img/bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-left: 10%;
-    margin-right: 10%;
-    font-family: 'Outfit', sans-serif;
-
+body {
+  background-image: url(/assets/img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: 'Outfit', sans-serif;
 }
 
-img{
-    height: 50px;
-    margin-top: 3% ;
+img {
+  height: 50px;
+  margin-top: 3%;
 }
 
-.first_title{
-    text-align: center;
-    line-height: 0.8rem;
-    margin-top: 8%;
+.first_title {
+  text-align: center;
+  line-height: 0.8rem;
+  margin-top: 8%;
 }
 
-.first_title h2{
-    font-weight: 400;
+.first_title h2 {
+  font-weight: 400;
 }
 
-
-.donut{
-    width: 400px;
-    height: 400px;
-    background: conic-gradient(#900080 20%, #900080 40%, #00ffff 40%, #00ffff 50%);
-    border-radius: 50%;
-    margin-left: 38%;
-    margin-top: 5%;
+.donut {
+  width: 400px;
+  height: 400px;
+  background: conic-gradient(
+    #900080 20%,
+    #900080 40%,
+    #00ffff 40%,
+    #00ffff 50%
+  );
+  border-radius: 50%;
+  margin-left: 38%;
+  margin-top: 5%;
 }
 
-
-.inTheDonut{
-    width: 280px;
-    height: 280px;
-    background-image: url(/assets/img/bg.jpg);
-    background-position: center -180px;
-    border-radius: 50%;
-    margin: 5%;
-    margin-bottom: 10%;
-    float: left;
-    margin-left: 60px;
-    margin-top: 60px;
-    text-align: center;
+.inTheDonut {
+  width: 280px;
+  height: 280px;
+  background-image: url(/assets/img/bg.jpg);
+  background-position: center -180px;
+  border-radius: 50%;
+  margin: 5%;
+  margin-bottom: 10%;
+  float: left;
+  margin-left: 60px;
+  margin-top: 60px;
+  text-align: center;
 }
-
 
 .inTheDonut p {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
-.twoParagraphs1{
-    float: left;
-    margin-top: 6%;
-    line-height: 4rem;
-    margin-left: 10%;
+.twoParagraphs1 {
+  float: left;
+  margin-top: 6%;
+  line-height: 4rem;
+  margin-left: 10%;
 }
 
-
-.twoParagraphs2{
-    float: right;
-    margin-top: 6%;
-    line-height: 4rem;
-    margin-right: 10%;
+.twoParagraphs2 {
+  float: right;
+  margin-top: 6%;
+  line-height: 4rem;
+  margin-right: 10%;
 }
 
+button {
+  color: whitesmoke;
+  background-color: transparent;
+  border: 2px solid white;
+  width: 16%;
+  font-size: 30px;
+  padding: 15px 30px;
+  margin-top: 5%;
+  text-align: center;
+  margin-left: 42.5%;
+  cursor: pointer;
+  box-shadow: 0 0 50px #272166;
+}
 
-button{
-    color: whitesmoke;
-    background-color: transparent;
-    border: 2px solid white;
-    width: 18%;
-    font-size: 30px;
-    padding: 15px 30px;
-    margin-top: 5%;
-    text-align: center;
-    margin-left: 42.5%;
-    cursor: pointer;
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
 }
