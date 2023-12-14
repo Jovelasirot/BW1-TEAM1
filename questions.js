@@ -201,7 +201,7 @@ let futureTime;
 const initializeTimer = () => {
   const timer = document.querySelector(".timer");
   const semicircle = document.querySelectorAll(".semicircle");
-  const sec = 4;
+  const sec = 15;
 
   const seconds = sec * 1000;
   const setTime = seconds;
@@ -230,9 +230,6 @@ const initializeTimer = () => {
     <div>${secs < 10 ? "0" + secs : secs}</div>
     <div class="timerText">REMAINING</div>`;
 
-    if (remainingTime < 10 * 1000) {
-      timer.style.color = "red";
-    }
     if (remainingTime <= 0) {
       semicircle[0].style.display = "none";
       semicircle[1].style.display = "none";
@@ -240,6 +237,12 @@ const initializeTimer = () => {
       timer.innerHTML = `<div class="timerText">SECONDS</div>
      <div>00</div>
     <div class="timerText">REMAINING</div>`;
+      clearInterval(timerLoop);
+      initializeTimer();
+      n += 1;
+      appendQuestion(n);
+      appendAnswers(n);
+      questionCurrentValue(n);
     }
   };
   const timerLoop = setInterval(countDownTimer);
