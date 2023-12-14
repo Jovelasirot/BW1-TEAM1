@@ -201,7 +201,7 @@ let futureTime;
 const initializeTimer = () => {
   const timer = document.querySelector(".timer");
   const semicircle = document.querySelectorAll(".semicircle");
-  const sec = 15;
+  const sec = 5;
 
   const seconds = sec * 1000;
   const setTime = seconds;
@@ -230,6 +230,9 @@ const initializeTimer = () => {
     <div class="timerText">REMAINING</div>`;
 
     if (remainingTime <= 0) {
+      timer.innerHTML = `<div class="timerText">SECONDS</div>
+     <div>00</div>
+    <div class="timerText">REMAINING</div>`;
       if (n !== 9) {
         n += 1;
         appendQuestion(n);
