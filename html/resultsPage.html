@@ -36,26 +36,35 @@
       </p>
     </div>
 
-    <div class="donut">
+    <!-- <div class="donut">
       <div class="inTheDonut">
-        <p id="passed" style="color: whitesmoke">
-          Congratulations! <br />
-          <span style="color: #00ffff">You passed the exam.</span>
-        </p>
-        <p id="certificate" style="color: whitesmoke">
-          We'll send you the certificate <br />
-          in few minutes. <br />
-          Check your email (incuding <br />
-          promotions / spam folder)
-        </p>
+
       </div>
+    </div> -->
+
+    <div id="canvas-holder" style="width: 600px">
+      <canvas id="chart-area" width="300" height="300" />
     </div>
+    <div id="chartjs-tooltip"></div>
+
+    <p id="passed" style="color: whitesmoke">
+      Congratulations! <br />
+      <span style="color: #00ffff">You passed the exam.</span>
+    </p>
+    <p id="certificate" style="color: whitesmoke">
+      We'll send you the certificate <br />
+      in few minutes. <br />
+      Check your email (incuding <br />
+      promotions / spam folder)
+    </p>
 
     <form>
       <button>
         <a href="./feedbackPage.html">RATE US</a>
       </button>
     </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <script src="../js/results.js"></script>
   </body>
 </html>
