@@ -201,7 +201,7 @@ let futureTime;
 const initializeTimer = () => {
   const timer = document.querySelector(".timer");
   const semicircle = document.querySelectorAll(".semicircle");
-  const sec = 5;
+  const sec = 25;
 
   const seconds = sec * 1000;
   const setTime = seconds;

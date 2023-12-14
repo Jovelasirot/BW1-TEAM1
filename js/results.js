@@ -25,10 +25,16 @@ const modifyWrongPercentage = () => {
 const passedOrNot = () => {
   const passed = document.getElementById("passed");
   if (resultsFromOtherPage >= 6) {
-    passed.innerHTML = `Congratulations! <br />
-    <span class="congrat-text">You passed the exam. Polar bears survived.</span>`;
+    passed.innerHTML = `<span id="congratTextCongrats">Congratulations! </span>
+    <span id="congrat-textPassed">You passed the exam. <br />Polar bears survived.</span>
+    <p id="certificate" ">
+    We'll send you the certificate <br />
+    in few minutes. <br />
+    Check your email (incuding <br />
+    promotions / spam folder)
+  </p>`;
   } else if (resultsFromOtherPage > 4) {
-    passed.innerHTML = `Almost there! <br />
+    passed.innerHTML = `Almost there! 
     <span class="congrat-text">You were close to pass the exam. Only one polar bear got killed.</span>`;
   } else {
     passed.innerHTML = `You failed! <br />
