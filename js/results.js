@@ -50,3 +50,89 @@ modifyWrongPercentage();
 passedOrNot();
 
 certificated();
+
+// Donut JS
+
+window.chartColors = {
+  right: "rgb(210, 0, 148)",
+  wrong: "rgb(0, 255, 255)",
+};
+
+Chart.defaults.global.tooltips.custom = function (tooltip) {
+  // Tooltip Element
+  let tooltipEl = document.getElementById("chartjs-tooltip");
+
+  // Hide if no tooltip
+  if (tooltip.opacity === 0) {
+    tooltipEl.style.opacity = 0;
+    return;
+  }
+
+  // Set Text
+  if (tooltip.body) {
+    let total = 0;
+
+    // get the value of the datapoint
+    let value =
+      this._data.datasets[tooltip.dataPoints[0].datasetIndex].data[
+        tooltip.dataPoints[0].index
+      ].toLocaleString();
+
+    // calculate value of all datapoints
+    this._data.datasets[tooltip.dataPoints[0].datasetIndex].data.forEach(
+      function (e) {
+        total += e;
+      }
+    );
+
+    // calculate percentage and set tooltip value
+    tooltipEl.innerHTML = "<h1>" + (value / total) * 100 + "%</h1>";
+  }
+
+  // calculate position of tooltip
+  let centerX =
+    (this._chartInstance.chartArea.left + this._chartInstance.chartArea.right) /
+    2;
+  let centerY =
+    (this._chartInstance.chartArea.top + this._chartInstance.chartArea.bottom) /
+    2;
+
+  // Display, position, and set styles for font
+  tooltipEl.style.opacity = 1;
+  tooltipEl.style.left = centerX + "px";
+  tooltipEl.style.top = centerY + "px";
+  tooltipEl.style.fontFamily = tooltip._fontFamily;
+  tooltipEl.style.fontSize = tooltip.fontSize;
+  tooltipEl.style.fontStyle = tooltip._fontStyle;
+  tooltipEl.style.padding = tooltip.yPadding + "px " + tooltip.xPadding + "px";
+};
+
+let config = {
+  type: "doughnut",
+  data: {
+    datasets: [
+      {
+        data: [`${10 - resultsFromOtherPage}`, `${resultsFromOtherPage}`],
+        backgroundColor: [window.chartColors.right, window.chartColors.wrong],
+      },
+    ],
+    labels: [],
+  },
+  options: {
+    responsive: true,
+    legend: {
+      display: true,
+      labels: {
+        padding: 20,
+      },
+    },
+    tooltips: {
+      enabled: false,
+    },
+  },
+};
+
+window.onload = function () {
+  let ctx = document.getElementById("chart-area").getContext("2d");
+  window.myPie = new Chart(ctx, config);
+};
