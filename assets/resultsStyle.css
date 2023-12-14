@@ -4,7 +4,7 @@ body {
   background-repeat: no-repeat;
   margin-left: 10%;
   margin-right: 10%;
-  font-family: "Outfit", sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 
 img {
@@ -15,7 +15,7 @@ img {
 .first_title {
   text-align: center;
   line-height: 0.8rem;
-  margin-top: 8%;
+  margin-top: 1%;
 }
 
 .first_title h2 {
@@ -75,7 +75,7 @@ button {
   width: 16%;
   font-size: 30px;
   padding: 15px 30px;
-  margin-top: 5%;
+  margin-top: 3%;
   text-align: center;
   margin-left: 42.5%;
   cursor: pointer;
@@ -206,4 +206,18 @@ a {
 
 #chartjs-tooltip > h1 {
   display: none;
+}
+
+.notPassed-text {
+  color: #e704ce;
+  font-size: 20px;
+  line-height: 1.2rem;
+  display: block;
+  margin-top: 10px;
+}
+.notPassed {
+  display: block;
+  margin-top: 138px;
+  font-size: 40px;
+  font-weight: bold;
 }
