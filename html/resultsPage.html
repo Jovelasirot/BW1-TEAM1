@@ -15,49 +15,45 @@
   </head>
   <body>
     <img src="/assets/img/epicode_logo.png" alt="logo" />
+
     <div class="first_title">
       <h1 style="color: whitesmoke; font-size: 80px">Results</h1>
       <h2 style="color: whitesmoke; font-size: 40px">
         The summary of your answers:
       </h2>
-    </div>
-    <div class="twoParagraphs1">
-      <p id="correct-percentage">
-        <span class="percentageFirst">Correct</span>
-        <span class="percentageSecond">66.7%</span>
-        <span class="percentageThird"> 4/6 questions </span>
-      </p>
-    </div>
-    <div class="twoParagraphs2">
-      <p id="wrong-percentage">
-        <span class="percentageFirst">Wrong</span>
-        <span class="percentageSecond">33.3%</span>
-        <span class="percentageThird"> 4/6 questions </span>
-      </p>
-    </div>
-
-    <!-- <div class="donut">
-      <div class="inTheDonut">
-
+      <div class="containerDonutText"></div>
+      <div class="twoParagraphs1">
+        <p id="correct-percentage">
+          <span class="percentageFirst">Correct</span>
+          <span class="percentageSecond">66.7%</span>
+          <span class="percentageThird"> 4/6 questions </span>
+        </p>
       </div>
-    </div> -->
 
-    <div id="canvas-holder" style="width: 600px">
-      <canvas id="chart-area" width="300" height="300" />
+      <div class="twoParagraphs2">
+        <p id="wrong-percentage">
+          <span class="percentageFirst">Wrong</span>
+          <span class="percentageSecond">33.3%</span>
+          <span class="percentageThird"> 4/6 questions </span>
+        </p>
+      </div>
+      <div id="canvas-holder" style="width: 500px">
+        <div class="innerCircle">
+          <p id="passed" style="color: whitesmoke">
+            Congratulations! <br />
+            <span style="color: #00ffff">You passed the exam.</span>
+          </p>
+          <p id="certificate" style="color: whitesmoke">
+            We'll send you the certificate <br />
+            in few minutes. <br />
+            Check your email (incuding <br />
+            promotions / spam folder)
+          </p>
+        </div>
+        <canvas id="chart-area" width="100" height="100" />
+      </div>
+      <div id="chartjs-tooltip"></div>
     </div>
-    <div id="chartjs-tooltip"></div>
-
-    <p id="passed" style="color: whitesmoke">
-      Congratulations! <br />
-      <span style="color: #00ffff">You passed the exam.</span>
-    </p>
-    <p id="certificate" style="color: whitesmoke">
-      We'll send you the certificate <br />
-      in few minutes. <br />
-      Check your email (incuding <br />
-      promotions / spam folder)
-    </p>
-
     <form>
       <button>
         <a href="./feedbackPage.html">RATE US</a>
