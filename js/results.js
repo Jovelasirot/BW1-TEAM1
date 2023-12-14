@@ -35,7 +35,7 @@ const passedOrNot = () => {
   </p>`
   } else if (resultsFromOtherPage > 4) {
     passed.innerHTML = `<span class="notPassed">Almost there!</span><br />
-    <span class="notPassed-text">You were close to pass the exam. <br />Only a polar bear got killed.</span>`
+    <span class="notPassed-text">You were close to pass the exam. <br />Only a few polar bears got killed.</span>`
   } else {
     passed.innerHTML = `<span class="notPassed">You failed!</span><br />
     <span class="notPassed-text">Study harder next time. Polar bears have died in vain.</span>`
