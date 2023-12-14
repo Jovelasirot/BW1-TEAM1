@@ -230,11 +230,17 @@ const initializeTimer = () => {
     <div class="timerText">REMAINING</div>`;
 
     if (remainingTime <= 0) {
-      n += 1;
-      appendQuestion(n);
-      appendAnswers(n);
-      questionCurrentValue(n);
-      initializeTimer();
+      if (n !== 9) {
+        n += 1;
+        appendQuestion(n);
+        appendAnswers(n);
+        questionCurrentValue(n);
+        initializeTimer();
+      } else {
+        n += 1;
+        localStorage.setItem("myResults", nCorrect);
+        window.location.assign("./resultsPage.html");
+      }
     }
   };
   timerLoop = setInterval(countDownTimer);
